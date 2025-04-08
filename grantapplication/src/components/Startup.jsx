@@ -17,7 +17,7 @@ export const Startup = () => {
                     <label class="form-label">2. Do you currently have a business plan?</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="businessPlan" id="planYes" value="yes" required />
-                        <label class="form-check-label" for="planYes">Yes</label>
+                        <label class="form-check-label" for="planYes">Yes (please send your business plan to blackcornerinvestments10@gmail.com)</label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="businessPlan" id="planNo" value="no" required />

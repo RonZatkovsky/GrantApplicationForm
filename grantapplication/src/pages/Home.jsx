@@ -22,7 +22,7 @@ export const Home = () => {
 
       {/* Grant Details Section */}
       <section className="row py-3 bg-light">
-        <div className="container p-4 rounded shadow-lg">
+        <div className="container p-2 rounded shadow-lg">
           <h3 className="h4 text-center mb-3">Grant Details</h3>
           <ul className="list-unstyled px-5">
             <li><strong>Launch Date:</strong> April 15th, 2025</li>
@@ -53,7 +53,7 @@ export const Home = () => {
       </section>
 
       {/* Eligibility Section */}
-      <section className="row py-3 shadow mb-5">
+      <section className="row py-2 shadow mb-5">
         <div className="container text-center">
           <h1 className="h3 mb-3">Eligibility Criteria for the Beginners Network Grant</h1>
           <p className="lead mb-4">
@@ -95,7 +95,7 @@ export const Home = () => {
         </div>
       </section>
       <section className="row">
-        <div className="container text-center">
+        <div className="container text-center pb-3">
           <p>If you think you're eligible, please click on the button below to fill out an application</p>
           <Link to={'/form'} className="btn btn-primary">Continue to application</Link>
         </div>
