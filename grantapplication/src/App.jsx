@@ -20,15 +20,16 @@ function App() {
           </p>
         </div>
       </section>
-      <div className='container-fluid mx-auto col-8 bg-'>
+      <div className='container-fluid mx-auto col-md-8 col-sm-12'>
           <Routes>
             <Route element={<Home />} path="/" />
             <Route element={<Form />} path="/form" />
           </Routes>
       </div>
       {/* Footer Section */}
-      <section className="row py-1 bg-dark text-white mt-4">
+      <section className="row bg-black text-white mt-4">
         <div className="container text-center">
+          <img src='./src/assets/slogan.jpg' alt='slogan'/>
           <p>&copy; 2025 Black Corner Investments Inc.</p>
         </div>
       </section>
