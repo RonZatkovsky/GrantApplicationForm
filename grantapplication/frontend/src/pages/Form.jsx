@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Startup } from "../components/Startup";
 import { Business } from "../components/Business";
 import axios from 'axios';
@@ -8,7 +8,9 @@ export const Form=()=>{
 
   const sendEmail = async (recipient, subject, body) => {
     try {
-      const response = await axios.post('https://<your-cloud-function-url>', {
+      const apiUrl = `${window.location.origin}/grantapplication/api/sendEmail`;
+      console.log(apiUrl)
+      const response = await axios.post(apiUrl, {
         recipient,
         subject,
         body,
@@ -17,9 +19,12 @@ export const Form=()=>{
     } catch (error) {
       console.error('Error sending email:', error);
     }
+    
   };
 
-sendEmail('recipient@example.com', 'Test Subject', 'Test Body');
+  useEffect(()=>{
+    sendEmail('recipient@example.com', 'Test Subject', 'Test Body');
+  },[])
 
     return(
     <div className='row mt-5'>
