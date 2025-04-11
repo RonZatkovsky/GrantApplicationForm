@@ -1,6 +1,8 @@
+import e from "cors";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export const Business = () => {
+export const Business = ({packageEmail}) => {
     const [businessNameAndEIN,setBusinessNameAndEIN]= useState({question:"1. What is the name of your business and your EIN number?",value:""})
     const [businessDuration,setBusinessDuration]= useState({question:"2. How long have you been in business? (Include start date)",value:""})
     const [businessInspiration,setBusinessInspiration]= useState({question:"3. What inspired you to start your business? (Max 250 words)",value:""})
@@ -14,28 +16,31 @@ export const Business = () => {
 
     const [file,setFile]= useState(null)
 
-    const handleSubmit= async (e)=>{
-        e.preventDefault()
-        const formInputs=[
-            businessNameAndEIN,
-            businessDuration,
-            businessInspiration,
-            businessProducts,
-            businessChallenge,
-            businessFunding,
-            businessIncome,
-            grantFundUse,
-            businessDifferentiator,
-            businessVision
-        ]
-        console.log(formInputs)
-    }
+    const navigate=useNavigate()
 
     return (
         <div className="container">
             <h1 className="text-center mb-4">6–12 Month Business Owner Grant Application</h1>
 
-            <form id="businessOwnerGrantForm">
+            <form 
+                id="businessOwnerGrantForm" 
+                onSubmit={(e)=>{
+                    e.preventDefault()
+                    packageEmail([
+                    businessNameAndEIN,
+                    businessDuration,
+                    businessInspiration,
+                    businessProducts,
+                    businessChallenge,
+                    businessFunding,
+                    businessIncome,
+                    grantFundUse,
+                    businessDifferentiator,
+                    businessVision
+                    ])
+                    navigate('/success')
+                }}
+            >
                 <div className="mb-3">
                     <label htmlFor="businessNameAndEIN" className="form-label">{businessNameAndEIN.question}</label>
                     <input 

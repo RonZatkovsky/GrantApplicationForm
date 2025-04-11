@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "vite build && firebase deploy"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.8.4",
@@ -16,7 +15,8 @@
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.5.0"
+    "react-router-dom": "^7.5.0",
+    "resend": "^4.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
