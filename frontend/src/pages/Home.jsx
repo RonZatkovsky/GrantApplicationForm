@@ -5,6 +5,22 @@ export const Home = () => {
   return (
     <>
       {/* About the Grant Section */}
+      <section className="container mt-3 mx-2 bg-light border-bottom border-3 mx-auto">
+        <div className=" row text-center">
+          <div className='col-9'>
+            <h1 className="display-4 text-primary mb-2">Introducing the Beginners Network Grant by Black Corner Investments Inc.</h1>
+            <p className="lead mb-3">
+              Supporting startup businesses and entrepreneurs in their first year of operation
+            </p>
+            <p className="lead mb-3">
+              Founded by Executive Director Kenia Massey (affectionately known as Mrs. Kay), Black Corner Investments Inc. is proud to announce its very first grant initiative.
+            </p>
+          </div>
+          <div className='col-3 mb-3'>
+            <img className='w-100 h-100' src="/images/formpicture.jpg" alt='Mrs Kay' />
+          </div>
+        </div>
+      </section>
       <section className="row py-3">
         <div className="container text-center">
           <h2 className="h4 mb-3">About the Grant</h2>
@@ -100,7 +116,7 @@ export const Home = () => {
           <Link to={'/form'} className="btn btn-primary">Continue to application</Link>
         </div>
       </section>
-      
+
     </>
   );
 };
