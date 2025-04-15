@@ -88,7 +88,7 @@ export const Startup = ({ packageEmail, name, setName, email, setEmail }) => {
                             required
                             onChange={(e) => { setBusinessPlan({ ...businessPlan, value: e.target.value }) }}
                         />
-                        <label className="form-check-label" htmlFor="planYes">Yes <strong>(please send your business plan with you'r name and business name to <a href="#">blackcornerinvestments10@gmail.com</a>)</strong></label>
+                        <label className="form-check-label" htmlFor="planYes">Yes <strong>(please send your business plan with your name and business name to <a href="#">blackcornerinvestments10@gmail.com</a>)</strong></label>
                     </div>
                     <div className="form-check">
                         <input

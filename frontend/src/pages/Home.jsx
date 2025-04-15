@@ -6,9 +6,9 @@ export const Home = () => {
     <>
       {/* About the Grant Section */}
       <section className="container mt-3 mx-2 bg-light border-bottom border-3 mx-auto">
-        <div className=" row text-center">
-          <div className='col-9'>
-            <h1 className="display-4 text-primary mb-2">Introducing the Beginners Network Grant by Black Corner Investments Inc.</h1>
+        <div className=" row text-center align-items-center">
+          <div className='col-md-9 col-sm-7'>
+            <h1 className="display-6 text-primary mb-2">Introducing the Beginners Network Grant by Black Corner Investments Inc.</h1>
             <p className="lead mb-3">
               Supporting startup businesses and entrepreneurs in their first year of operation
             </p>
@@ -16,7 +16,7 @@ export const Home = () => {
               Founded by Executive Director Kenia Massey (affectionately known as Mrs. Kay), Black Corner Investments Inc. is proud to announce its very first grant initiative.
             </p>
           </div>
-          <div className='col-3 mb-3'>
+          <div className='col-md-3 col-sm-5 mb-3'>
             <img className='w-100 h-100' src="/images/formpicture.jpg" alt='Mrs Kay' />
           </div>
         </div>
